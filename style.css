@@ -1,0 +1,315 @@
+:root {
+    --main: #e5d7d7;
+    --main-container: #e8e2e2;
+    --main-h2: #131212;
+    --main-button: #f566e2;
+    --main-button-hover: #891b6c;
+    --main-background-color-input-select-textarea: #efe7e7;
+    --main-color-input-select-textarea: #232222;
+    --main-border-color-input-select-textarea: #232222;
+    --main-form-label: rgb(22, 21, 21);
+    --main-form-input: #161515;
+    --main-table-color: #100f0f;
+    --main-table-background-color: #efe8e8;
+    color-scheme: light;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--main-container);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(243, 243, 243, 0.1);
+}
+
+.container input, .container select,  .container textarea {
+    background-color: var(--main-background-color-input-select-textarea);
+    color: var(--main-color-input-select-textarea);
+    border: 1px solid var(--main-border-color-input-select-textarea);
+}
+
+.container label, .auth label, .signup label {
+    color: var(--main-form-label);
+}
+
+
+.signup input, .auth input {
+    color: var(--main-form-input);
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--main-h2);
+    text-align: center;
+}
+
+h5 {
+    color: var(--main-h2);
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.buttons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+.auth {
+    text-align: center;
+}
+
+.auth input {
+    padding: 8px;
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signup {
+    text-align: center;
+}
+
+.signup input {
+    padding: 8px;
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons a button,
+.auth button,
+.signup button, .logout-btn button {
+    padding: 8px 15px; 
+    border-radius: 5px;
+    background-color: var(--main-button);
+    color: #fff;
+    font-size: 14px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px; 
+}
+
+.buttons a button:hover, .auth button:hover,
+.signup button:hover, .logout-btn button:hover{
+    background-color: var(--main-button-hover);
+}
+
+
+.welcome-message {
+    font-weight: bold;
+}
+
+.logout-btn,
+.add-task-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: var(--main-button);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logout-btn:hover,
+.add-task-btn:hover {
+    background-color: var(--main-button-hover);
+}
+
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+.task-table th,
+.task-table td {
+    padding: 10px;
+    border: 1px solid #aeacac;
+    color: var(--main-table-color);
+}
+
+
+.task-table th {
+    background-color: var(--main-table-background-color);
+    font-weight: bold;
+    color: var(--main-table-color);
+}
+
+.task-table td {
+    text-align: center;
+    background-color: var(--main-table-background-color);
+    color: var(--main-table-color);
+}
+
+button,
+button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: var(--main-button);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover,
+button[type="submit"]:hover {
+    background-color: var(--main-button-hover);
+}
+
+.back-btn {
+    background-color: var(--main-button);
+    text-align: center;
+}
+
+.back-btn:hover{
+    background-color: var(--main-button-hover);
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.search-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.search-box {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.search-button,
+.reset-button {
+    padding: 10px 20px;
+    background-color: var(--main-button);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+
+.search-button:hover,
+.reset-button:hover {
+    background-color: var(--main-button-hover);
+}
+
+.search-row input {
+    background-color: var(--main-background-color-input-select-textarea);
+    color: var(--main-color-input-select-textarea);
+    border: 1px solid var(--main-border-color-input-select-textarea);
+}
+
+.filter-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.filter-row select {
+    padding: 8px;
+    margin: 0 10px;
+    border: 1px solid var(--main-border-color-input-select-textarea);
+    border-radius: 5px;
+    background-color: var(--main-background-color-input-select-textarea);
+    color: var(--main-color-input-select-textarea);
+}
+
+
+.filter-row select:focus {
+    outline: none;
+    border-color: var(--main-button);
+}
+
+.icon_table {
+    width: auto;
+}
+
+.action-link {
+    display: inline-block; 
+    margin: 10px; 
+}
+
+.action-link img {
+    width: 20px;
+    height: auto;
+}
+
+.theme-toggle {
+    width: 3%;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* Dark */
+
+.dark {
+    --main: #191818;
+    --main-container: #1a1a1a;
+    --main-h2: #e8e2e2;
+    --main-background-color-input-select-textarea: #242222;
+    --main-color-input-select-textarea: #b4aeae;
+    --main-border-color-input-select-textarea: #b4aeae;
+    --main-form-label: #e8e2e2;
+    --main-form-input: #d7cccc;
+    --main-table-color: #eee9e9;
+    --main-table-background-color: #242222; 
+    color-scheme: dark;
+}
